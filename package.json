@@ -9,7 +9,6 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "repository": "https://github.com/thomlom/thomlom.github.io.git",
   "author": "Thomas Lombart <t.lombart97@gmail.com>",
   "license": "MIT",
   "devDependencies": {
