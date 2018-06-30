@@ -1,8 +1,6 @@
 .header {
   height: 100vh;
 
-  margin: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,74 +8,50 @@
 
   color: var(--color-grey-dark-1);
 
+  &__title, &__subtitle {
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 8rem;
+    margin-left: 4rem;
+    padding-bottom: 3rem;
+    width: 75%;
+  }
+
   &__title {
-    font-size: 3.5rem;
-    font-weight: 700;
     animation-name: moveInLeft;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-timing-function: ease-out;
   }
 
   &__subtitle {
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
     animation-name: moveInRight;
     animation-duration: 0.8s;
+    animation-delay: 1.2s;
+    animation-fill-mode: backwards;
+
     animation-timing-function: ease-out;
   }
 
-  &__photo {
-    height: 25em;
-    width: 25rem;
-    border-radius: 50%;
-    margin-top: 2em;
-    animation: moveInBottom 0.5s ease-out 0.75s;
+  &__links {
+    animation: moveInBottom 0.5s ease-out 2.5s;
     animation-fill-mode: backwards;
+    border-top: 4px solid var(--color-grey-dark-1);
 
-    box-shadow: var(--shadow-dark);
-  }
+    &__item {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: #555;
 
-  &__description {
-    margin-top: 4rem;
-    padding: 4rem;
-    background-color: var(--color-primary);
-    box-shadow: var(--shadow-light);
-    color: #fff;
-    font-size: 1.9rem;
-    letter-spacing: 1px;
-    text-align: center;
-    transform: skewX(-20deg);
-    animation: appear 0.5s ease-out 1.4s;
-    animation-fill-mode: backwards;
+        & > i {
+          font-size: 4rem;
+          margin: 3rem;
+          transition: all 0.2s;
+        }
 
-    &-text {
-      transform: skewX(20deg);
-
-      @media only screen and (max-width: $bp-small) {
-        transform: skewX(0deg);
-      }
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      width: 80%;
-      transform: skewX(0deg);
-    }
-  }
-
-  &__link {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: #555;
-
-      & > i {
-        transition: all 0.2s;
-      }
-
-      &:hover i {
-        color: #111;
+        &:hover i {
+          color: var(--color-primary);
+        }
       }
     }
   }
@@ -89,7 +63,7 @@
       color: black;
       animation-name: bounce;
       animation-duration: 0.7s;
-      animation-delay: 2s;
+      animation-delay: 3s;
       animation-direction: alternate;
       animation-iteration-count: infinite;
       animation-fill-mode: backwards;

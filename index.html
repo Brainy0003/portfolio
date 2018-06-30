@@ -4,7 +4,7 @@
 <head>
   <title>Thomlom's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -12,27 +12,27 @@
 
 <body>
   <div class="container">
-    <section class="first" <>
+    <section class="first">
       <header class="header">
-        <h1 class="header__title">Thomas Lombart</h1>
-        <h2 class="header__subtitle">
-          <span>Developer &vert;</span>
-          <a class="header__link" href="https://github.com/thomlom" target="_blank">
+        <p class="header__title">Hello.</p>
+        <p class="header__subtitle">
+          My name is Thomas and I'm a
+          <span class="important">software developer.</span>
+        </p>
+        <div class="header__links">
+          <a class="header__links__item" href="https://github.com/thomlom" target="_blank">
             <i class="fab fa-github">
             </i>
           </a>
-          <a class="header__link" href="https://linkedin.com/in/thomas-lombart" target="_blank">
+          <a class="header__links__item" href="https://medium.com/@thomlom" target="_blank">
+            <i class="fab fa-medium"></i>
+          </a>
+          <a class="header__links__item" href="https://twitter.com/thomas_lombart" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="header__links__item" href="https://linkedin.com/in/thomas-lombart" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-        </h2>
-        <p>
-        </p>
-        <img class="header__photo" src="img/photo.jpg">
-        <div class="header__description">
-          <p class="header__description-text">
-            I'm a developer that loves and spends most days designing and coding.
-            <br/>I'm curious and always broadening my knowledge and skills.
-          </p>
         </div>
         <a href="#me" class="header__icon">
           <i class="icon--big mt-large fas fa-angle-down"></i>
@@ -42,6 +42,7 @@
 
     <section class="second" id="me">
       <h2 class="section-title">About me</h2>
+      <h3 class="section-subtitle mt-small">Discover a little bit of who I am.</h3>
       <div class="words">
         <div class="words__item words__item--1">Minimalist</div>
         <div class="words__item words__item--2">Running</div>
@@ -61,59 +62,78 @@
 
     <section class="third">
       <h2 class="section-title">Projects</h2>
-
+      <h3 class="section-subtitle mt-small">Let's see what I've done.</h3>
       <div class="projects" id="projects">
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="projects/wikipedia_viewer/index.html">
             Wikipedia viewer
-          </h3>
+          </a>
         </div>
 
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="http://watchthestocks.herokuapp.com/">
             Watch the stocks
-          </h3>
+          </a>
         </div>
 
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="projects/random-quote-machine/index.html">
             Random quote machine
-          </h3>
+          </a>
         </div>
 
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="https://codepen.io/thomlom/full/mEpgYZ">
+            Game Of Life
+          </a>
+        </div>
+
+        <div class="project">
+          <a class="project__link" href="https://github.com/thomlom/arcadiaa">
+            Arcadiaa
+          </a>
+        </div>
+
+        <div class="project">
+          <a class="project__link" href="projects/heat-map/index.html">
+            Heat map
+          </a>
+        </div>
+
+        <div class="project">
+          <a class="project__link" href="https://codepen.io/thomlom/full/VjeRPq">
             Recipe Box
-          </h3>
+          </a>
         </div>
 
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="https://codepen.io/thomlom/full/BKEVve">
             Pomodoro Clock
-          </h3>
+          </a>
         </div>
 
         <div class="project">
-          <h3 class="project__title">
+          <a class="project__link" href="https://github.com/thomlom/react-full-stack-boilerplate">
             React MERN Boilerplate
-          </h3>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="fourth">
       <h2 class="section-title">Articles</h2>
+      <h3 class="section-subtitle mt-small">Writing is fun too.</h3>
       <ul class="articles">
         <li class="articles__item">
-          <a href="#" class="articles__item__link">
+          <a href="https://medium.com/@thomlom/writing-blazing-fast-html-code-97d19413af41" class="articles__item__link">
             Writing Blazing Fast HTML Code
           </a>
-        </li>
       </ul>
     </section>
 
     <section class="fifth">
       <h2 class="section-title">Contact</h2>
+      <h3 class="section-subtitle mt-small">Let's know each other.</h3>
 
       <div class="contact">
         <form action="#" class="form">

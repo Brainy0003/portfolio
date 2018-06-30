@@ -4,8 +4,18 @@
     letter-spacing: 0.5rem;
     padding: 0 0.3rem;
     border-bottom: 2.5px solid var(--color-primary); 
-    font-size: 3.3rem;
+    font-size: 3.4rem;
     font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.important {
+    color: var(--color-primary);
 }
 
 .description {
@@ -16,28 +26,6 @@
 .icon--big {
     font-size: 3rem;
     cursor: pointer;
-}
-
-.btn {
-    &:link,
-    &:visited {
-        display: inline-block;
-        text-decoration: none;
-        background-color: var(--color-grey-light-1);
-        color: #111;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 1.5rem 3rem;
-        cursor: pointer;
-        transition: all .2s;
-    }
-
-    &:hover {
-        background-color: var(--color-grey-light-3);
-    }
 }
 
 .btn-primary {
