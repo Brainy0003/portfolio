@@ -1,0 +1,83 @@
+body,
+html {
+  height: 100%;
+  background-color: #b97b7c;
+}
+
+/* MAIN */
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+#main .fullQuote {
+  min-height: 130px;
+}
+#main .quote {
+  font: 20px "Josefin Sans";
+  line-height: 35px;
+}
+#main .quote i {
+  margin: 0 5px;
+}
+#main .author {
+  font: 14px "Josefin Sans";
+  color: gray;
+  text-transform: uppercase;
+}
+#main .author:hover {
+  color: teal;
+  transform: scale(1.25);
+  transition: 1s;
+}
+#main .notif {
+  color: gray;
+  margin-top: 20px;
+}
+#main .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+#main .buttons span {
+  font: 18px "Josefin Sans";
+}
+#main .buttons .fa-refresh,
+#main .buttons .fa-twitter {
+  height: 5%;
+  margin-right: 1em;
+}
+#main .buttons .fa-refresh .newquote,
+#main .buttons .fa-refresh .tweet,
+#main .buttons .fa-twitter .newquote,
+#main .buttons .fa-twitter .tweet {
+  padding-left: 10%;
+}
+
+footer {
+  width: 100%;
+  background-color: grey;
+  color: whitesmoke;
+  font-family: Josefin Sans;
+}
+footer #icon {
+  display: flex;
+  justify-content: center;
+}
+footer #icon a {
+  text-decoration: none;
+  color: black;
+}
+footer #icon i {
+  margin: 0 10px;
+  height: 3%;
+  font-size: 20px;
+}
+footer #icon i:hover {
+  transform: scale(1.2);
+  padding: 4px;
+  position: relative;
+  bottom: 8px;
+}

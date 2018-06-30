@@ -1,0 +1,19 @@
+.footer {
+  padding: 3rem;
+
+  background-color: var(--color-dark);
+  color: #fff;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
+
+  &__legal {
+    font-size: 1.5rem;
+    text-align: center;
+
+    &-author {
+      font-weight: 700;
+    }
+  }
+}

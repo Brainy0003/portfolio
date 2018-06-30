@@ -1,0 +1,152 @@
+body,
+html {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#main {
+  height: 100%;
+}
+#main h1 {
+  font-family: Playfair Display;
+  position: absolute;
+  left: 1.5%;
+  top: 1.5%;
+}
+#main h3 p a {
+  color: grey;
+  text-decoration: none;
+}
+#main h3 p a:hover {
+  color: black;
+}
+#main #random {
+  font-family: Martel Sans;
+  text-decoration: none;
+  margin-top: 10px;
+  color: black;
+}
+#main #random:hover {
+  color: grey;
+}
+#main .list-group {
+  position: relative;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#main .search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: top 0.87s ease-in-out;
+}
+#main .search-bar-active {
+  top: 3%;
+}
+#main .extract {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  color: black;
+  font-family: 'Josefin Sans';
+}
+footer #icon {
+  display: flex;
+  justify-content: center;
+}
+footer #icon a {
+  text-decoration: none;
+  color: black;
+}
+footer #icon i {
+  margin: 0 10px;
+  height: 3%;
+  font-size: 20px;
+}
+footer #icon i:hover {
+  transform: scale(1.2);
+  padding: 4px;
+  position: relative;
+  bottom: 8px;
+}
+
+#article-1 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 0.31s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-2 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 0.62s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-3 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 0.93s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-4 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 1.24s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-5 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 1.55s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-6 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 1.86s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#article-7 {
+  perspective: 1000px;
+  animation-name: right;
+  animation-duration: 2.17s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

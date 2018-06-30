@@ -1,0 +1,47 @@
+.articles {
+  list-style: none;
+  margin-top: 2rem;
+
+  &__item {
+    position: relative;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-grey-dark-1);
+    cursor: pointer;
+
+    &__link:link,
+    &__link:visited {
+      font-size: 4.5rem;
+      font-weight: bold;    
+      letter-spacing: 3px;
+      text-decoration: none;
+      margin-left: 1rem;
+      color: white;
+      position: relative;
+      z-index: 10;
+      transition: all .25s ease-in-out .15s;
+    }
+
+    &:hover &__link {
+      color: white;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.8rem;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: transform .2s,
+                width .4s ease-in-out .2s,
+                background-color .1s;
+  }
+
+  &__item:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+}

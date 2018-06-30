@@ -1,0 +1,58 @@
+.section-title {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding: 0 0.3rem;
+    border-bottom: 2.5px solid var(--color-primary); 
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1.6em;
+    color: var(--color-grey-light-2);
+}
+
+.icon--big {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        background-color: var(--color-grey-light-1);
+        color: #111;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: var(--color-grey-light-3);
+    }
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all .2s;
+    font-size: 1.5rem;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-primary-dark);        
+    }
+}
