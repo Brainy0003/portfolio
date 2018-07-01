@@ -4,7 +4,6 @@
 
   &__item {
     padding: 3rem 0;
-    background-color: var(--color-primary);
 
     &__link:link,
     &__link:visited {
@@ -12,11 +11,14 @@
       font-weight: 400;
       letter-spacing: 3.5px;
       text-decoration: none;
-      margin-left: 2rem;
-      color: white;
+      color: black;
       position: relative;
       z-index: 10;
       transition: all .25s ease-in-out .15s;
+      
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+      }
     }
 
     &__link::before {
