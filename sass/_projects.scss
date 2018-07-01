@@ -16,6 +16,8 @@
   transition: all ease-in-out .3s;
   cursor: pointer;
 
+  border-radius: 3px;
+
   &:hover {
     background-color: var(--color-primary-dark);
   }
