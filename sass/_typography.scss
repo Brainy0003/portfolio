@@ -27,20 +27,3 @@
     font-size: 3rem;
     cursor: pointer;
 }
-
-.btn-primary {
-    background-color: var(--color-primary);
-    color: #fff;
-    text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
-    transition: all .2s;
-    font-size: 1.5rem;
-    border: none;
-    letter-spacing: 2px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: var(--color-primary-dark);        
-    }
-}
