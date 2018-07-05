@@ -1,26 +1,5 @@
-.section-title {
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    padding: 0 0.3rem;
-    border-bottom: 2.5px solid var(--color-primary); 
-    font-size: 3.4rem;
-    font-weight: 700;
-}
-
-.section-subtitle {
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 400;
-}
-
 .important {
     color: var(--color-primary);
-}
-
-.description {
-    font-size: 1.6em;
-    color: var(--color-grey-light-2);
 }
 
 .icon--big {

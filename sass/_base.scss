@@ -50,15 +50,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    min-height: 100vh;
 
     background-color: var(--color-grey-light-1);
-}
-
-.first {
-    display: flex;
-}
-
-.second, .third, .fourth, .fifth {
-    margin: 4rem;
 }

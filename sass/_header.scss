@@ -1,5 +1,6 @@
 .header {
   height: 100vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -12,8 +13,6 @@
     font-size: 7rem;
     font-weight: bold;
     line-height: 8rem;
-    margin-left: 4rem;
-    padding-bottom: 3rem;
     width: 75%;
 
     @media only screen and (max-width: $bp-medium) {
@@ -40,9 +39,6 @@
     animation: moveInBottom 0.5s ease-out 2s;
     animation-fill-mode: backwards;
 
-    margin-top: 2rem;
-    border-top: 4px solid var(--color-grey-dark-1);
-
     &__item {
       &:link,
       &:visited {
@@ -62,7 +58,7 @@
     }
   }
 
-  &__icon {
+  &__arrow {
     &:link,
     &:visited {
       text-decoration: none;
@@ -73,6 +69,22 @@
       animation-direction: alternate;
       animation-iteration-count: infinite;
       animation-fill-mode: backwards;
+
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: var(--color-primary);
+      }
     }
+  }
+}
+
+.line {
+  width: 50%;
+  height: 4px;
+  background-color: var(--color-grey-dark-1);
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
   }
 }
