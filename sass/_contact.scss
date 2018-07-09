@@ -52,41 +52,15 @@
     }
   }
 
-  &__input,
-  &__textarea {
-    margin-top: 3rem;
-    width: 40%;
-    font-size: 1.5rem;
-    font-family: Lato;
-    padding: 1.5rem 2rem;
-    border-radius: 2px;
-    background-color: #fff;
-    box-shadow: var(--shadow-light);
-    border: none;
-    box-sizing: border-box;
-    display: block;
+  &__description {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary-darkest);
+    letter-spacing: 1px;
 
     @media only screen and (max-width: $bp-medium) {
-      margin-top: 5rem;
-      width: 80%;
+      color: #fff;
+      text-align: center;
     }
-
-    @media only screen and (max-width: $bp-small) {
-      width: 100%;
-    }
-
-    &:focus {
-      outline: 2px solid var(--color-primary);
-    }
-  }
-
-  &__textarea {
-    resize: none;
-  }
-
-  &__label {
-    font-size: 1.2rem;
-    font-weight: 700;
-    display: block;
   }
 }
