@@ -56,6 +56,9 @@ body {
 .m-section {
   margin: 4rem 0; }
 
+.text-center {
+  text-align: center; }
+
 @keyframes bounce {
   0% {
     opacity: 0;
@@ -131,7 +134,7 @@ body {
     font-size: 7rem;
     font-weight: bold;
     line-height: 8rem;
-    width: 75%; }
+    width: 70%; }
     @media only screen and (max-width: 50em) {
       .header__title, .header__subtitle {
         width: 90%; } }
@@ -171,7 +174,7 @@ body {
       color: var(--color-primary); }
 
 .line {
-  width: 50%;
+  width: 30%;
   height: 4px;
   background-color: var(--color-grey-dark-1); }
   @media only screen and (max-width: 50em) {

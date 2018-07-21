@@ -13,7 +13,7 @@
     font-size: 7rem;
     font-weight: bold;
     line-height: 8rem;
-    width: 75%;
+    width: 70%;
 
     @media only screen and (max-width: $bp-medium) {
       width: 90%;
@@ -80,7 +80,7 @@
 }
 
 .line {
-  width: 50%;
+  width: 30%;
   height: 4px;
   background-color: var(--color-grey-dark-1);
 
