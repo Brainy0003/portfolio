@@ -20,17 +20,15 @@
     background-color: var(--color-primary-dark);
   }
 
-  &__link {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      font-size: 4rem;
-      text-align: center;
-      font-weight: 700;
-      letter-spacing: 3.5px;
-      text-transform: uppercase;
-      padding: 2rem;
-      color: #fff;
-    }
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: #fff;
   }
 }
