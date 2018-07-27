@@ -10,7 +10,7 @@
       font-weight: 700;
       letter-spacing: 1px;
       text-decoration: none;
-      color: var(--color-primary-darkest);
+      color: var(--color-primary);
       position: relative;
       z-index: 10;
       transition: all .25s ease-in-out;
@@ -20,7 +20,7 @@
       }
 
       &:hover {
-        color: var(--color-primary);
+        color: var(--color-primary-dark);
       }
     }
   }

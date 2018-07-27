@@ -5,14 +5,14 @@
   --color-primary-dark: #007A7F;
   --color-primary-darkest: #003D40;
   --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-2: #f8f8f8;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-  --shadow-light: 0 2rem 5rem rgba(0,0,0,.1);
+  --shadow-dark: 0 8px 16px 0 rgba(0,0,0,0.4);
+  --shadow-light: 0 2px 4px 0 rgba(0,0,0,0.2);
   --color-dark: #222831; }
 
 * {
@@ -32,10 +32,10 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-color: var(--color-grey-light-1); }
+  background-color: var(--color-grey-light-2); }
 
 .important {
   color: var(--color-primary); }
@@ -164,10 +164,12 @@ body {
         transition: all 0.2s; }
         @media only screen and (max-width: 37.5em) {
           .header__links__item:link > i, .header__links__item:visited > i {
-            font-size: 3rem; } }
+            font-size: 3rem;
+            margin: 2rem; } }
       .header__links__item:link:hover i, .header__links__item:visited:hover i {
         color: var(--color-primary); }
   .header__arrow:link, .header__arrow:visited {
+    justify-self: flex-end;
     text-decoration: none;
     color: black;
     animation-name: bounce;
@@ -182,8 +184,10 @@ body {
 
 .line {
   width: 35%;
-  height: 3px;
-  background-color: var(--color-grey-dark-1); }
+  height: 4px;
+  background-color: var(--color-grey-dark-1);
+  animation: moveInBottom 0.5s ease-out 2s;
+  animation-fill-mode: backwards; }
   @media only screen and (max-width: 50em) {
     .line {
       width: 90%; } }
@@ -212,6 +216,9 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     border-radius: 5px; }
+    @media only screen and (max-width: 37.5em) {
+      .words__item {
+        font-size: 1.5rem; } }
     .words__item--1 {
       grid-row: 1 / span 2;
       grid-column: 1 / span 2;
@@ -328,7 +335,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-auto-rows: 30rem;
-  grid-gap: 8px; }
+  grid-gap: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-auto-rows: 30rem;
+      grid-gap: 10px; } }
 
 .project {
   display: flex;
@@ -345,10 +357,16 @@ body {
     font-size: 4rem;
     text-align: center;
     font-weight: 700;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-light);
+    border-radius: 6px;
     padding: 2rem;
     color: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .project:link, .project:visited {
+        font-size: 3rem; } }
 
 .articles {
   list-style: none; }
@@ -359,7 +377,7 @@ body {
       font-weight: 700;
       letter-spacing: 1px;
       text-decoration: none;
-      color: var(--color-primary-darkest);
+      color: var(--color-primary);
       position: relative;
       z-index: 10;
       transition: all .25s ease-in-out; }
@@ -367,12 +385,13 @@ body {
         .articles__item__link:link, .articles__item__link:visited {
           font-size: 3rem; } }
       .articles__item__link:link:hover, .articles__item__link:visited:hover {
-        color: var(--color-primary); }
+        color: var(--color-primary-dark); }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/message.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  box-shadow: var(--shadow-dark); }
   @media only screen and (max-width: 50em) {
     .contact {
       background: linear-gradient(to right bottom, var(--color-primary-dark), var(--color-primary-darkest)); } }
@@ -413,7 +432,7 @@ body {
 
 .footer {
   padding: 3rem;
-  background-color: var(--color-dark);
+  background-color: var(--color-grey-dark-1);
   color: #fff; }
   @media only screen and (max-width: 50em) {
     .footer {

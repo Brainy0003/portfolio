@@ -8,6 +8,7 @@
     url(../img/message.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: var(--shadow-dark);
 
   @media only screen and (max-width: $bp-medium) {
     background: linear-gradient(

@@ -57,6 +57,7 @@
 
           @media only screen and (max-width: $bp-small) {
             font-size: 3rem;
+            margin: 2rem;
           }
         }
 
@@ -70,6 +71,7 @@
   &__arrow {
     &:link,
     &:visited {
+      justify-self: flex-end;
       text-decoration: none;
       color: black;
       animation-name: bounce;
@@ -90,8 +92,11 @@
 
 .line {
   width: 35%;
-  height: 3px;
+  height: 4px;
   background-color: var(--color-grey-dark-1);
+
+  animation: moveInBottom 0.5s ease-out 2s;
+  animation-fill-mode: backwards;
 
   @media only screen and (max-width: $bp-medium) {
     width: 90%;
